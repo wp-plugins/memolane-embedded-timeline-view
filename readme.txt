@@ -1,13 +1,12 @@
 === Memolane Embed ===
-Contributors: tribalvibes
+Contributors: memolane
 Donate link: http://memolane.com/
 Tags: Memolane, media embedding, timeline view
 Requires at least: 2.0.2
-Tested up to: 3.1
-Stable tag: 3.1
+Tested up to: 3.2
+Stable tag: 3.2
 
 Embed the awesome Memolane media timeline view via an easy WordPress shortcode plugin.
-
 
 == Description ==
 
@@ -21,12 +20,11 @@ To embed the Memolane lane with all the default settings, use the shortcode:
 But you probably want to at least specify a lane, like this (otherwise you'll just get ours!):
 [memolane lane="mylanename"]
 
-The following parameters are available:
+The following parameters are available (these are just sample values--replace with yours):
 [memolane lane="mylanename" width="450" height="600" background="#000044" border="1px solid #9AF"]
 
-For more information, refer to:
-http://blog.memolane.com/post/4719158195/one-lane-two-lanes-red-lanes-blue-lanes-embedded
-
+For a complete tutorial and details, refer to:
+https://memolane.uservoice.com/knowledgebase/articles/8443-a-guide-to-embedding-your-memolane
 
 == Installation ==
 
@@ -36,6 +34,9 @@ http://blog.memolane.com/post/4719158195/one-lane-two-lanes-red-lanes-blue-lanes
 
 
 == Changelog ==
+
+= 0.02 =
+* Validate parameters
 
 = 0.01 =
 * Initial version
