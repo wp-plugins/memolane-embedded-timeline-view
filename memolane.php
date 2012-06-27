@@ -3,7 +3,7 @@
 Plugin Name: Memolane
 Plugin URI: https://memolane.uservoice.com/knowledgebase/articles/8443-a-guide-to-embedding-your-memolane
 Description: Embed the awesome Memolane media timeline view in your blog page.
-Version: 0.03
+Version: 1.0
 Author: memolane
 Author URI: http://memolane.com/site/support.html
 License: GPL2
