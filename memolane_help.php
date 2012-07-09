@@ -38,6 +38,8 @@
 	</p>
 	<p>	
 	<strong>== Changelog ==</strong><br/><br/>
+	= 1.1 =<br/> 
+    * Bug fix for reading lane's titles<br/><br/>
 	= 1.0 =<br/> 
 	* Added in admin menu to configure the lane via a ui. Now shortcode only uses id of lane created/configured in wordpress admin.<br/><br/>
 	= 0.02 = <br/>
