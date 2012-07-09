@@ -144,7 +144,7 @@ function memolane_func( $atts ) {
 	if ($username != preg_replace( '/[^A-Za-z0-9_]+/', '', $username ) ) {
 		$lane = 'memolane';
 	}
-	elseif($title === '' || $title != preg_replace( '/[^A-Za-z0-9_]+/', '', $title )) {
+	elseif($title === '' || $title != preg_replace( '/[^A-Za-z0-9_\s]+/', '', $title )) {
 		$lane = urlencode($username);
 	}
 	else {
