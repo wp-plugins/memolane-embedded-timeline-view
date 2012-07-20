@@ -9,11 +9,11 @@
 
     <p>Find "Plug-ins" on the left hand toolbar and click "add new". Here you can search for the Memolane plug-in by typing in "Memolane".</p>
 
-    <p><a href="http://memolane.com/img/embedded/how-to-1.png"></p>
+    <p><img src="http://memolane.com/img/embedded/how-to-1.png" /></p>
 
     <p>To begin the install process click "install" in the upper right hand corner. You can also install the plug-in by uploading the zip file on this panel or unzipping the contents into the appropriate plug-ins folder. Once the plug-in has been successfully installed, click "activate plug-in" located under the Memolane plug-in in the main plug-in page.</p>
 
-    <p><a href="http://memolane.com/img/embedded/how-to-2.png"></p>
+    <p><img src="http://memolane.com/img/embedded/how-to-2.png" /></p>
 
     <p>The Memolane plug-in should now be visible on the left side of the toolbar. Click on "Memolane" and then click on "add new".You will be presented with a screen that asks for your lane details and modification options. We suggest that before completing this process you should log into your Memolane account and review the lane you wish to embed. Review the selected filters to make sure that it contains all your desired content. You can always go back and edit these settings once you have embedded the lane.</p>
 
@@ -34,11 +34,11 @@
     <p><strong> Border</strong> - The border of the iframe of the embedded lane. Use a css value or default. (ex: 1px solid white)
     Click "save" to capture all of your parameters. Copy the short code that will appear at the bottom of the parameter page.</p>
 
-    <p><a href="http://memolane.com/img/embedded/how-to-3.png"></p>
+    <p><img src="http://memolane.com/img/embedded/how-to-3.png" /></p>
 
     <p>Paste the short code into the HTML section of your WordPress blog.</p>
 
-    <p><a href="http://memolane.com/img/embedded/how-to-4.png"></p>
+    <p><img src="http://memolane.com/img/embedded/how-to-4.png" /></p>
 
     <p>Share with friends!</p>
 
