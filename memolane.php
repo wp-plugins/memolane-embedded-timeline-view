@@ -145,10 +145,10 @@ function memolane_func( $atts ) {
 		$lane = 'memolane';
 	}
 	elseif($title === '' || $title != preg_replace( '/[^A-Za-z0-9_\s]+/', '', $title )) {
-		$lane = urlencode($username);
+		$lane = rawurlencode($username);
 	}
 	else {
-		$lane = urlencode($username) . '/' . urlencode($title);
+		$lane = rawurlencode($username) . '/' . rawurlencode($title);
 	}
 	
 	// figure out the background
@@ -156,7 +156,7 @@ function memolane_func( $atts ) {
 		if ( $background != preg_replace( '/[^A-Fa-f0-9]+/', '', $background ) )
 			$background = 'default';
 		else
-			$background = urlencode( "#{$background}" );
+			$background = rawurlencode( "#{$background}" );
 	}
 	
 	// figure out the border
@@ -164,7 +164,7 @@ function memolane_func( $atts ) {
 		$border = 'default';
 	}
 	else {
-		$border = urlencode( $border );
+		$border = rawurlencode( $border );
 	}
 	
 	// figure out the width and the height
