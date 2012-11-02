@@ -3,7 +3,7 @@
 Plugin Name: Memolane
 Plugin URI: https://memolane.uservoice.com/knowledgebase/articles/8443-a-guide-to-embedding-your-memolane
 Description: Embed the awesome Memolane media timeline view in your blog page.
-Version: 0.03
+Version: 1.4
 Author: memolane
 Author URI: http://memolane.com/site/support.html
 License: GPL2
@@ -12,7 +12,7 @@ License: GPL2
 global $wpdb;
 
 /** version info **/
-$new_version = 0.03;
+$new_version = 1.4;
 
 if (!defined('MEMOLANE_VERSION_KEY'))
     define('MEMOLANE_VERSION_KEY', 'memolane_version');
@@ -144,11 +144,11 @@ function memolane_func( $atts ) {
 	if ($username != preg_replace( '/[^A-Za-z0-9_]+/', '', $username ) ) {
 		$lane = 'memolane';
 	}
-	elseif($title === '' || $title != preg_replace( '/[^A-Za-z0-9_]+/', '', $title )) {
-		$lane = urlencode($username);
+	elseif($title === '' || $title != preg_replace( '/[^A-Za-z0-9_\s]+/', '', $title )) {
+		$lane = rawurlencode($username);
 	}
 	else {
-		$lane = urlencode($username) . '/' . urlencode($title);
+		$lane = rawurlencode($username) . '/' . rawurlencode($title);
 	}
 	
 	// figure out the background
@@ -156,7 +156,7 @@ function memolane_func( $atts ) {
 		if ( $background != preg_replace( '/[^A-Fa-f0-9]+/', '', $background ) )
 			$background = 'default';
 		else
-			$background = urlencode( "#{$background}" );
+			$background = rawurlencode( "#{$background}" );
 	}
 	
 	// figure out the border
@@ -164,7 +164,7 @@ function memolane_func( $atts ) {
 		$border = 'default';
 	}
 	else {
-		$border = urlencode( $border );
+		$border = rawurlencode( $border );
 	}
 	
 	// figure out the width and the height
@@ -180,6 +180,9 @@ function memolane_func( $atts ) {
 	if( strpos($height, '%') === false ) {
 		$height = (int) $height;
 	}
+
+	$height = rawurlencode($height);
+	$width = rawurlencode($width);
 
 	return "<script src='http://memolane.com/{$lane}.js?&width={$width}&height={$height}&background={$background}&border={$border}'></script>";
 }
