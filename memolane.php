@@ -12,7 +12,7 @@ License: GPL2
 global $wpdb;
 
 /** version info **/
-$new_version = 1.2;
+$new_version = 1.3;
 
 if (!defined('MEMOLANE_VERSION_KEY'))
     define('MEMOLANE_VERSION_KEY', 'memolane_version');
